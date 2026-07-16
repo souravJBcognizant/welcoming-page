@@ -1,0 +1,141 @@
+/* Welcome Component Styles - Based on Figma Design */
+
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+/* Container and Layout */
+.welcome-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 675px;
+  margin: 0 auto;
+  position: relative;
+  background: linear-gradient(135deg, 
+    rgb(61, 48, 133) 0%,     /* Purple */
+    rgb(18, 20, 38) 55%,      /* Dark navy */
+    rgb(0, 107, 92) 100%      /* Teal green */
+  );
+  overflow: hidden;
+}
+
+.welcome-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 175px 100px 0 100px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Typography Styles */
+.welcome-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.welcome-subheading {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.welcome-body {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+/* Button Styles */
+.welcome-button {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  background-color: rgb(0, 107, 92);
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.welcome-button:hover {
+  background-color: rgb(0, 87, 75);
+}
+
+.welcome-button:active {
+  transform: translateY(1px);
+}
+
+/* Skyline Decoration */
+.welcome-skyline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.08;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .welcome-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-content {
+    padding: 100px 40px 0 40px;
+  }
+  
+  .welcome-heading {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  
+  .welcome-subheading {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .welcome-body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-content {
+    padding: 80px 20px 0 20px;
+  }
+  
+  .welcome-heading {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  
+  .welcome-subheading {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
