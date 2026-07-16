@@ -9,26 +9,30 @@ const Welcome: React.FC<WelcomeProps> = ({ className = '' }) => {
   return (
     <div className={`welcome-container ${className}`}>
       <div className="welcome-content">
-        {/* Heading */}
-        <h1 className="welcome-heading">
-          Welcome to Our Platform
-        </h1>
+        {/* Badge/Chip */}
+        <div className="welcome-badge">
+          COGNIZANT · BENGALURU
+        </div>
         
         {/* Subheading */}
-        <h2 className="welcome-subheading">
-          Discover amazing features and possibilities
-        </h2>
+        <p className="welcome-subheading">
+          Please join us in welcoming
+        </p>
+        
+        {/* Main Heading */}
+        <h1 className="welcome-heading">
+          Babak Hodjat
+        </h1>
+        
+        {/* Accent Text */}
+        <p className="welcome-accent">
+          to Bengaluru
+        </p>
         
         {/* Body Text */}
         <p className="welcome-body">
-          Experience a seamless journey with our intuitive design and powerful features. 
-          We're here to help you achieve your goals with ease and efficiency.
+          Delighted to have you with us. Here's to bold ideas, great people, and a warm Bengaluru welcome.
         </p>
-        
-        {/* CTA Button */}
-        <button className="welcome-cta-button" type="button">
-          Get Started
-        </button>
       </div>
       
       {/* Skyline Decoration */}

@@ -26,6 +26,23 @@
   z-index: 1;
 }
 
+/* Welcome Badge Styles */
+.welcome-badge {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 /* Typography Styles */
 .welcome-heading {
   font-family: 'Inter', sans-serif;
@@ -35,7 +52,18 @@
   letter-spacing: -0.02em;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+/* Welcome Accent for "to Bengaluru" text */
+.welcome-accent {
+  font-family: 'Inter', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+  letter-spacing: -0.02em;
+  color: rgb(0, 107, 92);
+  display: inline;
 }
 
 .welcome-subheading {
@@ -45,7 +73,7 @@
   line-height: 36px;
   color: rgba(255, 255, 255, 0.8);
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .welcome-body {
@@ -55,7 +83,7 @@
   line-height: 28px;
   color: rgba(255, 255, 255, 0.6);
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 /* Button Styles */
@@ -108,9 +136,16 @@
     padding: 100px 40px 0 40px;
   }
   
-  .welcome-heading {
+  .welcome-heading,
+  .welcome-accent {
     font-size: 48px;
     line-height: 58px;
+  }
+  
+  .welcome-badge {
+    font-size: 12px;
+    padding: 5px 12px;
+    margin-bottom: 20px;
   }
   
   .welcome-subheading {
@@ -129,9 +164,16 @@
     padding: 80px 20px 0 20px;
   }
   
-  .welcome-heading {
+  .welcome-heading,
+  .welcome-accent {
     font-size: 36px;
     line-height: 44px;
+  }
+  
+  .welcome-badge {
+    font-size: 11px;
+    padding: 4px 10px;
+    margin-bottom: 16px;
   }
   
   .welcome-subheading {
