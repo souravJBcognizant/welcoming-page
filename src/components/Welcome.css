@@ -1,7 +1,7 @@
 /* Welcome Component Styles - Based on Figma Design */
 
 /* Import Inter font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /* Container and Layout */
 .welcome-container {
@@ -24,6 +24,9 @@
   padding: 175px 100px 0 100px;
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 /* Welcome Badge Styles */
@@ -31,57 +34,84 @@
   display: inline-block;
   font-family: 'Inter', sans-serif;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  background: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
-  padding: 6px 14px;
+  letter-spacing: 1.04px;
+  line-height: 15.73px;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.85);
+  padding: 8px 16px;
   border-radius: 20px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 /* Typography Styles */
 .welcome-heading {
   font-family: 'Inter', sans-serif;
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 700;
-  line-height: 77px;
-  letter-spacing: -0.02em;
-  color: #ffffff;
+  letter-spacing: -1.44px;
+  line-height: 52.8px;
+  color: rgba(255, 255, 255, 1);
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 /* Welcome Accent for "to Bengaluru" text */
 .welcome-accent {
   font-family: 'Inter', sans-serif;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 77px;
-  letter-spacing: -0.02em;
-  color: rgb(0, 107, 92);
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 43.57px;
+  color: #1AD9B3;
   display: inline;
+  margin-bottom: 16px;
 }
 
 .welcome-subheading {
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 36px;
-  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: -0.4px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.85);
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+}
+
+/* New Welcome Title class */
+.welcome-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+/* New Welcome Date class */
+.welcome-date {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.16px;
+  line-height: 22.4px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
 }
 
 .welcome-body {
   font-family: 'Inter', sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
-  line-height: 28px;
-  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0px;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.60);
   margin: 0;
   margin-bottom: 32px;
 }
